@@ -12,7 +12,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: examplepassword
 
   backend:
-    image: <megha474>/mean-backend:latest
+    image: megha474/mean-backend:latest
     restart: always
     container_name: backend
     depends_on:
@@ -24,7 +24,7 @@ services:
       - "5000:5000"
 
   frontend:
-    image: <megha474>/mean-frontend:latest
+    image: megha474/mean-frontend:latest
     restart: always
     container_name: frontend
     depends_on:
